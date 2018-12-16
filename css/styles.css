@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700");
+@import url("cssreset.css");
+@import url("top-section.css");
+@import url("services.css");
+@import url("portfolio.css");
+@import url("experience.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.main-container .wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  background: white;
+  -webkit-box-shadow: 0px 1px 15px 5px black;
+  box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=styles.css.map */

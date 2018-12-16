@@ -1,0 +1,373 @@
+.portfolio-section {
+  background: white;
+  width: 100%;
+  padding: 50px;
+}
+
+.portfolio-section .section-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio-section .section-title .red-square {
+  height: 120px;
+  width: 120px;
+  border-radius: 5px;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.portfolio-section .section-title h1 {
+  position: absolute;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.portfolio-section .portfolio-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px;
+  grid-gap: 5px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.portfolio-section .portfolio-container .box {
+  display: block;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio-section .portfolio-container .box:hover {
+  -webkit-box-shadow: 0px 30px 60px -8px rgba(0, 0, 0, 0.21);
+          box-shadow: 0px 30px 60px -8px rgba(0, 0, 0, 0.21);
+  background: black;
+}
+
+.portfolio-section .portfolio-container .image1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  border-top-left-radius: 30px;
+}
+
+.portfolio-section .portfolio-container .image1 .image {
+  background-image: url("https://source.unsplash.com/random/650x400");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-top-left-radius: 30px;
+}
+
+.portfolio-section .portfolio-container .image2 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / span 2;
+}
+
+.portfolio-section .portfolio-container .image2 .image {
+  background: url("https://source.unsplash.com/random/400x400");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-top-right-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image3 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.portfolio-section .portfolio-container .image3 .image {
+  background: url("https://source.unsplash.com/random/400x350");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-top-right-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image3 .image:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-container .image3 .image .hover-bg {
+  opacity: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section .portfolio-container .image3 .image .hover-bg .title {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-section .portfolio-container .image3 .image .hover-bg .title .text {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.portfolio-section .portfolio-container .image4 .image {
+  background: url("https://source.unsplash.com/random/350x350");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-top-right-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image4 .image:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-container .image4 .image .hover-bg {
+  opacity: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section .portfolio-container .image4 .image .hover-bg .title {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-section .portfolio-container .image4 .image .hover-bg .title .text {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image5 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.portfolio-section .portfolio-container .image5 .image {
+  background: url("https://source.unsplash.com/random/300x400");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-bottom-left-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image5 .image:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-container .image5 .image .hover-bg {
+  opacity: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section .portfolio-container .image5 .image .hover-bg .title {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-section .portfolio-container .image5 .image .hover-bg .title .text {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image6 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.portfolio-section .portfolio-container .image6 .image {
+  background: url("https://source.unsplash.com/random/300x350");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-top-right-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image6 .image:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-container .image6 .image .hover-bg {
+  opacity: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section .portfolio-container .image6 .image .hover-bg .title {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-section .portfolio-container .image6 .image .hover-bg .title .text {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image7 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.portfolio-section .portfolio-container .image7 .image {
+  background: url("https://source.unsplash.com/random/300x450");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  border-bottom-right-radius: 10px;
+}
+
+.portfolio-section .portfolio-container .image7 .image:hover .hover-bg {
+  opacity: 1;
+}
+
+.portfolio-section .portfolio-container .image7 .image .hover-bg {
+  opacity: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.portfolio-section .portfolio-container .image7 .image .hover-bg .title {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.portfolio-section .portfolio-container .image7 .image .hover-bg .title .text {
+  background: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  padding: 30px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=portfolio.css.map */

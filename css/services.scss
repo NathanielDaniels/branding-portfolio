@@ -1,0 +1,71 @@
+.services-section {
+            background: #eee;
+            width: 100%;
+            padding: 50px;
+            .section-title {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .blue-circle {
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 50%;
+                    background: rgba(64, 224, 208,.1);
+                }
+                h1 {
+                    position: absolute;
+                    align-self: center;
+                    font-weight: 700;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                    letter-spacing: .05em;
+                }
+            }
+            .service-cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                .card {
+                    // height: 260px;
+                    margin: 0 15px;
+                    padding: 30px 20px 50px;
+                    transition: all .4s ease-in-out;
+                    //Second Card
+                    &:nth-child(1) {
+                        border-bottom: 2px solid green;
+                        grid-column: 1;
+                    }
+                    //Second Card
+                    &:nth-child(2) {
+                        border-bottom: 2px solid blue;
+                        grid-column: 2;
+                    }
+                    //Third Card
+                    &:nth-child(3) {
+                        border-bottom: 2px solid purple;
+                        grid-column: 3;
+                    }
+                    &:hover {
+                        background: rgba(255, 255, 255,.1);
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 30px 60px -8px rgba(0,0,0,0.21);
+                        -moz-box-shadow: 0px 30px 60px -8px rgba(0,0,0,0.21);
+                        box-shadow: 0px 30px 60px -8px rgba(0,0,0,0.21);
+                    }
+                    .icon {
+                        font-size: 1.5em;
+                    }
+                    .title {
+                        padding: 20px 0;
+                    }
+                    .info {
+                        color: #666;
+                        line-height: 1.4;
+                        // overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+                //End Card
+            }
+            // End Service-Cards
+        }
+        // End Section2
